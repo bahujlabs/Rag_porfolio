@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,800&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  /* ── Backgrounds ── */
+  --color-bg:        #0d0f14;
+  --color-surface:   #13161f;
+  --color-surface2:  #1a1e2a;
+
+  /* ── Borders ── */
+  --color-border:    #1f2335;
+  --color-border2:   #2a304a;
+
+  /* ── Text ── */
+  --color-text:      #cdd6f4;
+  --color-text1:     #cdd6f4;
+  --color-text2:     #7f8ec0;
+  --color-text3:     #45506a;
+
+  /* ── Accent (teal/cyan) ── */
+  --color-accent:    #2dd4bf;
+  --color-accent-dim:#0f766e;
+
+  /* ── Purple secondary accent ── */
+  --color-purple:    #7c6af7;
+  --color-purple-dim:#4f46b8;
+
+  /* ── Error ── */
+  --color-error:     #f87171;
+
+  /* ── Fonts ── */
+  --font-head: 'Bricolage Grotesque', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  /* ── Animations ── */
+  --animate-blink:   blink 0.7s step-end infinite;
+  --animate-fade-up: fadeUp 0.2s ease-out both;
+  --animate-bounce:  bounce 0.6s infinite;
+
+  --color-user-bg:     #1a2744;   /* deep navy blue bubble */
+  --color-user-border: #2a3f6f;   /* slightly lighter navy border */
+  --color-user-text:   #cdd6f4;
+}
+
+/* ── Keyframes ─────────────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);    }
+  50%       { transform: translateY(-4px); }
+}
+
+/* ── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-thumb { background: #2a304a; border-radius: 4px; }
+
+/* ── Streaming cursor ───────────────────────────────────── */
+.streaming-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: #2dd4bf;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+  border-radius: 1px;
+  animation: blink 0.7s step-end infinite;
+}
+
+/* ── Thinking dots ──────────────────────────────────────── */
+.thinking-dot:nth-child(2) { animation-delay: 0.15s; }
+.thinking-dot:nth-child(3) { animation-delay: 0.30s; }
+
+/* ── Prose ──────────────────────────────────────────────── */
+.prose-rag h1         { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.4rem;  font-weight: 700; margin: 14px 0 8px;  color: #cdd6f4; }
+.prose-rag h2         { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.1rem;  font-weight: 600; margin: 14px 0 6px;  padding-bottom: 4px; border-bottom: 1px solid #1f2335; color: #cdd6f4; }
+.prose-rag h3         { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.95rem; font-weight: 600; margin: 12px 0 4px;  color: #2dd4bf; }
+.prose-rag p          { margin: 6px 0; color: #cdd6f4; }
+.prose-rag ul         { padding-left: 20px; margin: 6px 0; list-style: disc; }
+.prose-rag ol         { padding-left: 20px; margin: 6px 0; list-style: decimal; }
+.prose-rag li         { margin: 3px 0; color: #cdd6f4; }
+.prose-rag blockquote { border-left: 2px solid #0f766e; padding: 4px 0 4px 14px; color: #7f8ec0; font-style: italic; margin: 8px 0; }
+.prose-rag hr         { border: none; border-top: 1px solid #1f2335; margin: 14px 0; }
+.prose-rag code       { background: #0d0f14; border: 1px solid #2a304a; border-radius: 4px; padding: 1px 6px; font-family: 'DM Mono', monospace; font-size: 0.88em; color: #2dd4bf; }
+.prose-rag pre        { background: #0d0f14; border: 1px solid #1f2335; border-radius: 8px; padding: 14px 16px; overflow-x: auto; margin: 10px 0; }
+.prose-rag pre code   { background: none; border: none; padding: 0; color: #cdd6f4; font-size: 0.82rem; }
+.prose-rag a          { color: #2dd4bf; text-decoration: none; }
+.prose-rag a:hover    { color: #5eead4; text-decoration: underline; }
+.prose-rag table      { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.85rem; }
+.prose-rag th         { background: #13161f; border: 1px solid #1f2335; padding: 7px 10px; text-align: left; font-weight: 600; color: #7f8ec0; }
+.prose-rag td         { border: 1px solid #1f2335; padding: 7px 10px; color: #cdd6f4; }
+.prose-rag strong     { font-weight: 700; }
+.prose-rag em         { font-style: italic; }
