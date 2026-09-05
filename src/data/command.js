@@ -120,7 +120,7 @@ Here are some of my highlighted builds:
       {
         icon: FaGithub,
         label: "GitHub",
-        href: "https://github.com/bahujlabs",
+        href: "https://github.com",
       },
     ],
     sources: [],
