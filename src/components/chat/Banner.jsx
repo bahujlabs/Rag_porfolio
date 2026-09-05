@@ -44,7 +44,7 @@ export default function Banner({ onCommand }) {
 
         {/* Description */}
         <p className="mt-5 max-w-2xl text-sm leading-7 text-text2 md:text-base">
-          Fullstack & AI engineer who turns ideas into production-ready products —
+          Fullstack & AI engineer who turns ideas into production-ready products 
           from sleek frontends to scalable backends and intelligent AI systems.{" "}
           <span className="text-text1 font-medium">
             This assistant knows everything about my work.

@@ -42,9 +42,7 @@ export default function ChatWindow({
             showSources={showSources}
           />
         ))}
-        {isLoading && !assistantAlreadyRendered && (
-          <ThinkingIndicator />
-        )}
+        {isLoading && !assistantAlreadyRendered && <ThinkingIndicator />}
         <div ref={bottomRef} />
       </div>
     </section>

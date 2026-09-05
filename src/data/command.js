@@ -56,7 +56,7 @@ MongoDB, PostgreSQL, Redis
 Here are some of my highlighted builds:
     `,
     projects: [
-      {
+      /*   {
         icon: FaRobot,
         title: "AI Knowledge Base Chatbot for a School",
         description:
@@ -64,13 +64,13 @@ Here are some of my highlighted builds:
         demo: "https://icastschool.com/payment",
         github: "https://github.com/yourname/ai-knowledge-chatbot",
         tags: ["AI", "RAG", "Backend"],
-      },
+      }, */
       {
         icon: FaCreditCard,
         title: "Payment Integration System",
         description:
           "Secure Paystack payment flow with verification and protected downloads.",
-        demo: "https://icastschool.com/payment",
+        /* demo: "https://icastschool.com/payment", */
         github: "https://github.com/yourname/payment-integration",
         tags: ["Payments", "Security"],
       },
@@ -86,8 +86,7 @@ Here are some of my highlighted builds:
       {
         icon: FaLock,
         title: "Secure Auth System",
-        description:
-          "JWT authentication + role-based access control system.",
+        description: "JWT authentication + role-based access control system.",
         demo: "https://iconiherbals.com/register",
         github: "https://github.com/yourname/auth-system",
         tags: ["Auth", "Security"],
@@ -95,8 +94,7 @@ Here are some of my highlighted builds:
       {
         icon: FaRocket,
         title: "Backend Performance System",
-        description:
-          "Redis caching + rate limiting for scalable APIs.",
+        description: "Redis caching + rate limiting for scalable APIs.",
         demo: "https://backend-demo.vercel.app",
         /* github: "https://github.com/yourname/backend-performance", */
         tags: ["Performance", "Caching"],
@@ -111,8 +109,8 @@ Here are some of my highlighted builds:
     links: [
       {
         icon: FaEnvelope,
-        label: "bahujlabs@example.com",
-        href: "mailto:bahujlabs@example.com",
+        label: "awujbaba@gmail.com",
+        href: "mailto:awujbaba@gmail.com@example.com",
       },
       {
         icon: FaLinkedin,
@@ -122,7 +120,7 @@ Here are some of my highlighted builds:
       {
         icon: FaGithub,
         label: "GitHub",
-        href: "https://github.com/yourname",
+        href: "https://github.com/bahujlabs",
       },
     ],
     sources: [],

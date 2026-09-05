@@ -40,7 +40,7 @@ export default function Sidebar({ sendMessage, isLoading }) {
         <span className="h-2 w-2 rounded-full bg-accent animate-pulse shadow-[0_0_10px_#b8f67a]" />
 
         <span className="text-xs text-text3 tracking-wide uppercase">
-          RAG Online
+          Assistant Online
         </span>
       </div>
     </aside>
